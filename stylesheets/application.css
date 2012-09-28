@@ -93,7 +93,7 @@ body {
 
   87% {
     opacity: 0;
-    -webkit-transform: scale(1.7); }
+    -webkit-transform: scale(1.95); }
 
   100% {
     opacity: 0; } }
@@ -113,7 +113,7 @@ div#first {
   z-index: 4; }
 
 div#second {
-  background: -webkit-gradient(linear, 30% 0%, 0% 100%, from(rgba(255, 255, 255, 0)), to(rgba(0, 255, 0, 0.6)));
+  background: -webkit-gradient(linear, 30% 0%, 0% 100%, from(rgba(255, 255, 255, 0)), to(rgba(0, 255, 0, 0.4)));
   z-index: 3; }
 
 div#third {
@@ -121,7 +121,7 @@ div#third {
   z-index: 2; }
 
 div#fourth {
-  background: -webkit-gradient(linear, 30% 0%, 100% 100%, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 0, 0.7)));
+  background: -webkit-gradient(linear, 30% 0%, 100% 100%, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 0, 0.4)));
   z-index: 1; }
 
 div#bubbles > div {
@@ -130,8 +130,5 @@ div#bubbles > div {
   opacity: 0;
   position: absolute;
   z-index: 5;
-  -webkit-animation: f 15s linear infinite;
-  -webkit-box-shadow: inset 0 -1px 10px 0px rgba(255, 255, 255, 0.2); }
-
-.one {
-  -webkit-animation: f 15s linear infinite; }
+  -webkit-animation: f 15s linear;
+  box-shadow: inset 0 -1px 10px 0px rgba(255, 255, 255, 0.2); }

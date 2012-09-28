@@ -7,7 +7,7 @@ $(function() {
     var canvasWidth = $(document).width();
     var canvasHeight = $(document).height();
 
-    var radius = getRandomInt(10, 200);
+    var radius = getRandomInt(10, 208);
 
     var thisBubble = $("<div />").appendTo("#bubbles");
 
@@ -18,18 +18,24 @@ $(function() {
       'margin-top': -radius/2,
       'margin-left': -radius/2,
       'top': getRandomInt(radius, canvasHeight - radius),
-      '-webkit-animation-duration': getRandomInt(2, 10) + 's',
+      '-webkit-animation-duration': getRandomInt(2.5, 10) + 's',
       'width': radius
     });
   }
 
   function generateBubbles() {
     newBubble();
+    numberOfBubbles++;
+
+    if (numberOfBubbles > 10) {
+      $("#bubbles > div:first-child").remove();
+    }
 
     clearInterval(timer);
-    timer = setInterval(generateBubbles, getRandomInt(853, 3583));
+    timer = setInterval(generateBubbles, getRandomInt(252, 2542));
   }
 
-  var timer = setInterval(generateBubbles, 1000);
+  var numberOfBubbles = 0;
+  var timer = setInterval(generateBubbles, 500);
 });
 
