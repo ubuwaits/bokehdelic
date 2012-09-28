@@ -25,9 +25,8 @@ $(function() {
 
   function generateBubbles() {
     newBubble();
-    numberOfBubbles++;
 
-    if (numberOfBubbles > 10) {
+    if ($("#bubbles > div").length > 10) {
       $("#bubbles > div:first-child").remove();
     }
 
@@ -35,7 +34,6 @@ $(function() {
     timer = setInterval(generateBubbles, getRandomInt(252, 2542));
   }
 
-  var numberOfBubbles = 0;
   var timer = setInterval(generateBubbles, 500);
 });
 
