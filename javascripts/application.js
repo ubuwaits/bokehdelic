@@ -18,7 +18,7 @@ $(function() {
       'margin-top': -radius/2,
       'margin-left': -radius/2,
       'top': getRandomInt(radius, canvasHeight - radius),
-      '-webkit-animation-duration': getRandomInt(2.5, 10) + 's',
+      '-webkit-animation-duration': getRandomInt(4.2, 9.8) + 's',
       'width': radius
     });
   }
