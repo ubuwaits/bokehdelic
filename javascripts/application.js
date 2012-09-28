@@ -3,21 +3,33 @@ $(function() {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  var canvasWidth = $(document).width();
-  var canvasHeight = $(document).height();
+  function newBubble () {
+    var canvasWidth = $(document).width();
+    var canvasHeight = $(document).height();
 
-  var radius = getRandomInt(10, 200);
+    var radius = getRandomInt(10, 200);
 
-  $("#bubbles").append("<div id='first-bubble'/>");
-  $("#first-bubble").css ({
-    'border-radius': radius/2,
-    'height': radius,
-    'left': getRandomInt(0, canvasWidth - radius),
-    'margin-top': -radius/2,
-    'margin-left': -radius/2,
-    'top': getRandomInt(0, canvasHeight - radius),
-    '-webkit-animation-duration': getRandomInt(1, 10) + 's',
-    'width': radius
-  });
+    var thisBubble = $("<div />").appendTo("#bubbles");
+
+    $(thisBubble).css ({
+      'border-radius': radius/2,
+      'height': radius,
+      'left': getRandomInt(radius, canvasWidth - radius),
+      'margin-top': -radius/2,
+      'margin-left': -radius/2,
+      'top': getRandomInt(radius, canvasHeight - radius),
+      '-webkit-animation-duration': getRandomInt(2, 10) + 's',
+      'width': radius
+    });
+  }
+
+  function generateBubbles() {
+    newBubble();
+
+    clearInterval(timer);
+    timer = setInterval(generateBubbles, getRandomInt(853, 3583));
+  }
+
+  var timer = setInterval(generateBubbles, 1000);
 });
 
