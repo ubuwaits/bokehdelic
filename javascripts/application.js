@@ -6,16 +6,16 @@ $(function() {
   var canvasWidth = $(document).width();
   var canvasHeight = $(document).height();
 
-  var radius = 300;
+  var radius = getRandomInt(10, 200);
 
   $("#bubbles").append("<div id='first-bubble'/>");
   $("#first-bubble").css ({
     'border-radius': radius/2,
     'height': radius,
-    'left': getRandomInt(0, canvasWidth),
+    'left': getRandomInt(0, canvasWidth - radius),
     'margin-top': -radius/2,
     'margin-left': -radius/2,
-    'top': getRandomInt(0, canvasHeight),
+    'top': getRandomInt(0, canvasHeight - radius),
     '-webkit-animation-duration': getRandomInt(1, 10) + 's',
     'width': radius
   });

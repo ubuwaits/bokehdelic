@@ -65,22 +65,22 @@ div.background {
 
 div#first {
   background: -webkit-gradient(linear, 30% 0%, 0% 100%, from(rgba(255, 0, 0, 0.4)), to(rgba(255, 255, 255, 0)));
-  z-index: 1;
+  z-index: 4;
 }
 
 div#second {
   background: -webkit-gradient(linear, 30% 0%, 0% 100%, from(rgba(255, 255, 255, 0)), to(rgba(0, 255, 0, 0.6)));
-  z-index: 2;
+  z-index: 3;
 }
 
 div#third {
   background: -webkit-gradient(linear, 30% 0%, 100% 100%, from(rgba(0, 0, 255, 0.4)), to(rgba(255, 255, 255, 0)));
-  z-index: 3;
+  z-index: 2;
 }
 
 div#fourth {
   background: -webkit-gradient(linear, 30% 0%, 100% 100%, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 0, 0.7)));
-  z-index: 4;
+  z-index: 1;
 }
 
 div#bubbles > div {
@@ -96,101 +96,4 @@ div#bubbles > div {
 .one {
   -webkit-animation: f 15s linear infinite;
 }
-
-div#second-bubble {
-  border-radius: 150px;
-  height: 200px;
-  left: 200px;
-  top: 200px;
-  width: 200px;
-  -webkit-animation: f 10s linear infinite;
-  -webkit-animation-delay: 3s;
-}
-
-div#third-bubble {
-  border-radius: 120px;
-  height: 240px;
-  right: 300px;
-  bottom: 400px;
-  width: 240px;
-  -webkit-animation: f 20s linear infinite;
-}
-
-div#fourth-bubble {
-  border-radius: 55px;
-  bottom: 300px;
-  height: 110px;
-  left: 400px;
-  width: 110px;
-  -webkit-animation: f 8s linear infinite;
-}
-
-div#fifth-bubble {
-  border-radius: 50px;
-  height: 100px;
-  right: 200px;
-  top: 20px;
-  width: 100px;
-  -webkit-animation: f 6s linear infinite;
-}
-
-div#sixth-bubble {
-  border-radius: 125px;
-  bottom: 200px;
-  height: 250px;
-  right: 200px;
-  width: 250px;
-  -webkit-animation: f 21s linear infinite;
-  -webkit-animation-delay: 4s;
-}
-
-div#seventh-bubble {
-  border-radius: 135px;
-  bottom: 400px;
-  height: 270px;
-  left: 500px;
-  width: 270px;
-  -webkit-animation: f 25s linear infinite;
-}
-
-div#eighth-bubble {
-  border-radius: 80px;
-  bottom: 100px;
-  height: 160px;
-  left: 100px;
-  width: 160px;
-  -webkit-animation: f 18s linear infinite;
-  -webkit-animation-delay: 7s;
-}
-
-div#ninth-bubble {
-  border-radius: 65px;
-  top: 30px;
-  height: 130px;
-  left: 50px;
-  width: 130px;
-  -webkit-animation: f 16s linear infinite;
-  -webkit-animation-delay: 2s;
-}
-
-div#tenth-bubble {
-  border-radius: 90px;
-  right: 480px;
-  height: 180px;
-  top: 250px;
-  width: 180px;
-  -webkit-animation: f 6s linear infinite;
-  -webkit-animation-delay: 6s;
-}
-
-div#eleventh-bubble {
-  border-radius: 160px;
-  left: 280px;
-  height: 210px;
-  top: 250px;
-  width: 210px;
-  -webkit-animation: f 26s linear infinite;
-  -webkit-animation-delay: 10s;
-}
-
 
