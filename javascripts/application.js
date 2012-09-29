@@ -5,7 +5,7 @@ $(function() {
 
   function newBubble () {
     var radius = randomInt(10, 208);
-    var animationDuration = randomInt(4.2, 9.8);
+    var animationDuration = randomInt(4.2, 11.8);
 
     if (event) {
       var left = event.clientX;
