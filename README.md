@@ -1,6 +1,6 @@
 # Bokehdelic
 
-A soothing, interactive visualization. Click the page to add new bokeh (or bubbles, or whatever you'd like to call them) to the page. Or, watch as new ones are generated automatically.
+A soothing, interactive experience in your web browser. Click to add new bokeh (or bubbles, or whatever you'd like to call them) to the page. Or, watch as new ones are generated automatically.
 
 ### View it: http://hellohappy.org/bokehdelic
 
