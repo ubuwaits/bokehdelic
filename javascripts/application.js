@@ -12,8 +12,8 @@ $(function() {
       var top = event.clientY;
     }
     else {
-      var left = randomInt(radius, $(document).width() - radius);
-      var top = randomInt(radius, $(document).height() - radius);
+      var left = randomInt(0, $(document).width());
+      var top = randomInt(0, $(document).height());
     }
 
     $("<div />").appendTo("#bubbles")
