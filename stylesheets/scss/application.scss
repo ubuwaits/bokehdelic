@@ -67,12 +67,12 @@ div#first {
 
 div#second {
   background: -webkit-gradient(linear, 30% 0%, 0% 100%, from(rgba(255, 255, 255, 0)), to(rgba(0, 255, 0, 0.4)));
-  z-index: 3;
+  z-index: 2;
 }
 
 div#third {
   background: -webkit-gradient(linear, 30% 0%, 100% 100%, from(rgba(0, 0, 255, 0.4)), to(rgba(255, 255, 255, 0)));
-  z-index: 2;
+  z-index: 3;
 }
 
 div#fourth {
