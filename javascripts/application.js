@@ -6,18 +6,25 @@ $(function() {
   function newBubble () {
     var canvasWidth = $(document).width();
     var canvasHeight = $(document).height();
-
     var radius = getRandomInt(10, 208);
+
+    if (event) {
+      var left = event.clientX;
+      var top = event.clientY;
+    }
+    else {
+      var left = getRandomInt(radius, canvasWidth - radius);
+      var top = getRandomInt(radius, canvasHeight - radius);
+    }
 
     var thisBubble = $("<div />").appendTo("#bubbles");
 
     $(thisBubble).css ({
-      'border-radius': radius/2,
       'height': radius,
-      'left': getRandomInt(radius, canvasWidth - radius),
+      'left': left,
       'margin-top': -radius/2,
       'margin-left': -radius/2,
-      'top': getRandomInt(radius, canvasHeight - radius),
+      'top': top,
       '-webkit-animation-duration': getRandomInt(4.2, 9.8) + 's',
       'width': radius
     });
@@ -26,7 +33,7 @@ $(function() {
   function generateBubbles() {
     newBubble();
 
-    if ($("#bubbles > div").length > 10) {
+    if ($("#bubbles > div").length > 25) {
       $("#bubbles > div:first-child").remove();
     }
 
@@ -35,5 +42,10 @@ $(function() {
   }
 
   var timer = setInterval(generateBubbles, 500);
+
+  $("body").click(function() {
+    newBubble();
+  });
+
 });
 
