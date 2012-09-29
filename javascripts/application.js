@@ -5,6 +5,7 @@ $(function() {
 
   function newBubble () {
     var radius = randomInt(10, 208);
+    var animationDuration = randomInt(4.2, 9.8);
 
     if (event) {
       var left = event.clientX;
@@ -15,14 +16,19 @@ $(function() {
       var top = randomInt(radius, $(document).height() - radius);
     }
 
-    $("<div />").appendTo("#bubbles").css ({
+    $("<div />").appendTo("#bubbles")
+    .css ({
       'height': radius,
       'left': left,
       'margin-top': -radius/2,
       'margin-left': -radius/2,
       'top': top,
-      '-webkit-animation-duration': randomInt(4.2, 9.8) + 's',
+      '-webkit-animation-duration': animationDuration + 's',
       'width': radius
+    })
+    .delay(animationDuration * 1000)
+    .queue(function() {
+      $(this).remove();
     });
   }
 
@@ -31,10 +37,6 @@ $(function() {
 
     clearInterval(timer);
     timer = setInterval(generateBubbles, randomInt(252, 2542));
-
-    if ($("#bubbles > div").length > 25) {
-      $("#bubbles > div:first-child").remove();
-    }
   }
 
   var timer = setInterval(generateBubbles, 500);
