@@ -96,39 +96,35 @@ body {
 html, body {
   height: 100%; }
 
-section#container {
+#container {
   height: 100%;
   width: 100%; }
 
-div.background {
+.background {
   height: 100%;
   left: 0;
   position: absolute;
   top: 0;
   width: 100%; }
+  .background #first {
+    background: -webkit-gradient(linear, 30% 0%, 0% 100%, from(rgba(255, 0, 0, 0.4)), to(rgba(255, 255, 255, 0)));
+    z-index: 4; }
+  .background #second {
+    background: -webkit-gradient(linear, 30% 0%, 0% 100%, from(rgba(255, 255, 255, 0)), to(rgba(0, 255, 0, 0.4)));
+    z-index: 2; }
+  .background #third {
+    background: -webkit-gradient(linear, 30% 0%, 100% 100%, from(rgba(0, 0, 255, 0.4)), to(rgba(255, 255, 255, 0)));
+    z-index: 3; }
+  .background #fourth {
+    background: -webkit-gradient(linear, 30% 0%, 100% 100%, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 0, 0.4)));
+    z-index: 1; }
 
-div#first {
-  background: -webkit-gradient(linear, 30% 0%, 0% 100%, from(rgba(255, 0, 0, 0.4)), to(rgba(255, 255, 255, 0)));
-  z-index: 4; }
-
-div#second {
-  background: -webkit-gradient(linear, 30% 0%, 0% 100%, from(rgba(255, 255, 255, 0)), to(rgba(0, 255, 0, 0.4)));
-  z-index: 2; }
-
-div#third {
-  background: -webkit-gradient(linear, 30% 0%, 100% 100%, from(rgba(0, 0, 255, 0.4)), to(rgba(255, 255, 255, 0)));
-  z-index: 3; }
-
-div#fourth {
-  background: -webkit-gradient(linear, 30% 0%, 100% 100%, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 0, 0.4)));
-  z-index: 1; }
-
-div#bubbles {
+#bubbles {
   height: 100%;
   overflow: hidden;
   position: relative;
   width: 100%; }
-  div#bubbles > div {
+  #bubbles > div {
     background: -webkit-gradient(linear, 30% 0%, 0% 100%, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.4)));
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 50%;
