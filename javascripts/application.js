@@ -41,7 +41,7 @@ $(function() {
 
   var timer = setInterval(generateBubbles, 500);
 
-  $("body").click(function() {
+  $('section#container').click(function() {
     newBubble();
   });
 
