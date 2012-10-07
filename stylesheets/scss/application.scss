@@ -64,22 +64,22 @@ html, body {
   top: 0;
   width: 100%;
 
-  #first {
+  &#first {
     background: -webkit-gradient(linear, 30% 0%, 0% 100%, from(rgba(255, 0, 0, 0.4)), to(rgba(255, 255, 255, 0)));
     z-index: 4;
   }
 
-  #second {
+  &#second {
     background: -webkit-gradient(linear, 30% 0%, 0% 100%, from(rgba(255, 255, 255, 0)), to(rgba(0, 255, 0, 0.4)));
     z-index: 2;
   }
 
-  #third {
+  &#third {
     background: -webkit-gradient(linear, 30% 0%, 100% 100%, from(rgba(0, 0, 255, 0.4)), to(rgba(255, 255, 255, 0)));
     z-index: 3;
   }
 
-  #fourth {
+  &#fourth {
     background: -webkit-gradient(linear, 30% 0%, 100% 100%, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 0, 0.4)));
     z-index: 1;
   }
