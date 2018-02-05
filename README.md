@@ -4,7 +4,7 @@ A soothing, interactive experience in your web browser. Click to add new bokeh (
 
 Todo: fix sporadic flickering on iOS when creating a new bubble.
 
-### View it: http://chad.is/bokehdelic
+### View it: http://ubuwaits.github.io/bokehdelic/
 
 To view and update the repo locally, start the Jekyll server and watch the Sass files with:
 
